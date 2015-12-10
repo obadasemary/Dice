@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -26,7 +26,8 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="Roll The Dice!"/>
                                 <connections>
-                                    <action selector="rollTheDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fuc-tI-ys5"/>
+                                    <action selector="rollTheDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hne-8t-HYB"/>
+                                    <segue destination="Sla-RR-XYm" kind="presentation" identifier="rollDice" id="Dcf-VL-8qg"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -23,15 +23,17 @@ class RollViewController: UIViewController {
     }
 
     @IBAction func rollTheDice(sender: UIButton) {
-        var controller: DiceViewController
-        
-        controller = self.storyboard?.instantiateViewControllerWithIdentifier("DiceViewController") as! DiceViewController
-        
-        controller.firstValue = self.randomDiceValue()
-        controller.secondValue = self.randomDiceValue()
-        
-        presentViewController(controller, animated: true, completion: nil)
+        performSegueWithIdentifier("rollDice", sender: self)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "rollDice" {
+            let controller = segue.destinationViewController as! DiceViewController
+            
+            controller.firstValue = self.randomDiceValue()
+            controller.secondValue = self.randomDiceValue()
+        }
+    }
 }
+
 
